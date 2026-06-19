@@ -59,10 +59,10 @@ Nexus acts as the centralized artifact repository.
 
 Repositories:
 
-- maven-releases
+- maven-releases-
 - maven-snapshots
 - maven-central (proxy)
-- maven-public (group)
+- maven-public (group)=vpro-maven-group
 
 Stores:
 
@@ -104,6 +104,24 @@ To integrate Jenkins with external tools and automate the CI/CD workflow, the fo
 - Adds timestamps to Jenkins builds
 - Improves build traceability
 - Helps generate unique artifact names
+  
+### Nexus Dependency Management
 
+- Nexus is configured as a proxy for Maven Central.
+
+- Jenkins → Nexus → Maven Central
+
+- During a build, Maven dependencies are downloaded through Nexus. If a dependency is not available locally, Nexus retrieves it from Maven Central and caches it for future builds.
+
+#### Maven Central Repository:
+
+https://repo1.maven.org/maven2/
+
+Benefits:
+
+- Faster builds
+- Dependency caching
+- Reduced internet traffic
+- Centralized dependency management
 
 
