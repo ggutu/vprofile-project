@@ -37,8 +37,8 @@ Maven is used for dependency management and application builds.
 
 Common Commands:
 
-mvn clean package
-mvn deploy
+- mvn clean package
+- mvn deploy
 
 ## SonarQube
 
