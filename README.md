@@ -60,9 +60,9 @@ Nexus acts as the centralized artifact repository.
 
 Repositories:
 
-- maven-releases-
-- maven-snapshots
-- maven-central (proxy)
+- maven-releases=vprofile-release
+- maven-snapshots=vprofile-snapshot
+- maven-central (proxy)=vpro-maven-central
 - maven-public (group)=vpro-maven-group
 
 Stores:
