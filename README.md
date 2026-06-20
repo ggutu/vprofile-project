@@ -36,8 +36,9 @@ Responsibilities:
 Maven is used for dependency management and application builds.
 
 Common Commands:
-
-- mvn clean package
+- mvn -s settings.xml -DskipTests install
+- mvn -s settings.xml test
+- mvn -s settings.xml checkstyle:checkstyle
 - mvn deploy
 
 ## SonarQube
