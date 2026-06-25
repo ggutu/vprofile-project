@@ -39,6 +39,7 @@ Common Commands:
 - mvn -s settings.xml -DskipTests install
 - mvn -s settings.xml test
 - mvn -s settings.xml checkstyle:checkstyle
+- sonar-scanner
 - mvn deploy
 
 ## SonarQube
