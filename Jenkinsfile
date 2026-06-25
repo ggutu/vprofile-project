@@ -18,7 +18,7 @@ pipeline {
         // #NEXUS_LOGIN = 'nexuslogin'
         SONARSERVER = 'sonarserver'
         SONARSCANNER = 'sonarscanner'
-        NEXUS_AUTH     = credentials('nexuslogin')
+        NEXUS_LOGIN  = 'nexuslogin'
     }
 
     stages {
@@ -90,7 +90,6 @@ pipeline {
                   ]
                 )
             }
+		}
         }
-
-    }
-}
+	}
